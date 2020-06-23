@@ -2,9 +2,9 @@
 ## Title: CameraOverShoulderFix
 ## Author: LudiusMaximus
 ## Notes: Compensating the undesirably |ndifferent effects of cvar |ntest_cameraOverShoulder |ndepending on player model.
-## SavedVariables: cosFixDB
+## SavedVariables: cosFixDB, customOffsetFactors, newFactorTriggers
 ## OptionalDeps: Ace3, DynamicCam
-## Version: Alpha 1.0a2
+## Version: Alpha 1.0a4
 ## X-Donate: PayPal:ludiusmaximus@gmail.com
 ## X-License: The MIT License (MIT)
 
@@ -15,9 +15,8 @@ options.lua
 correction.lua
 events.lua
 
-factors_races.lua
-factors_shapeshift.lua
-factors_mounts.lua
-factors_vehicles.lua
+setFactorFrame.lua
 
-dynamicCam_tweaks.lua
+factors.lua
+
+#events_nonPlayerModels.lua
